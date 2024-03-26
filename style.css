@@ -154,6 +154,7 @@ button {
   font-size: var(--fs-s);
   font-weight: var(--fw-black);
   margin: auto;
+  white-space: nowrap;
 }
 
 .features-section .image-container {
@@ -335,6 +336,8 @@ footer button {
   footer {
     display: grid;
     place-items: center;
+    padding-bottom: 4.125rem;
+    background: url("./assets/tablet/image-footer.jpg") no-repeat top center;
   }
 
   footer .container {
@@ -346,5 +349,69 @@ footer button {
   footer h2 {
     max-width: 28.5625rem;
   }
+}
 
+/* DESKTOP */
+@media (min-width: 90rem) {
+  :root {
+    --fs-xl: 4rem;
+  }
+
+  .hero-section {
+    margin-top: 3.375rem;
+    background-image: url("./assets/desktop/image-hero-left.png"), url("./assets/desktop/image-hero-right.png");
+    background-size: 358px;
+    background-repeat: no-repeat;
+    background-position: calc(50% - 35.25rem) 0, calc(50% + 35.25rem) 100%;
+  }
+
+  .hero-section::before {
+    display: none;
+  }
+
+  .hero-section .container {
+    max-width: 33.75rem;
+  }
+
+  .hero-section .container p {
+    font-size: var(--fs-m);
+    line-height: 1.44;
+  }
+
+  .features-section {
+    display: grid;
+    place-items: center;
+  }
+
+  .features-section .container p {
+    font-size: var(--fs-m);
+    line-height: 1.44;
+  }
+
+  .features-section .image-container {
+    max-width: 69.375rem; 
+    gap: 1.875rem;
+  }  
+
+  footer {
+    background: url("./assets/desktop/image-footer.jpg") no-repeat top center;
+    padding-bottom: 6.5rem;
+  }
+
+  footer .container {
+    display: flex;
+    gap: 7.8125rem;
+    max-width: 69.375rem;
+    width: 100%;
+  }
+
+  footer .container h2 {
+    text-align: left;
+    max-width: 21.875rem;
+  }
+
+  footer .container p {
+    text-align: left;
+    max-width: 21.875rem;
+  }
 }
