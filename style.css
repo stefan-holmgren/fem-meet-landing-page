@@ -228,8 +228,7 @@ footer {
   color: var(--clr-base);
   z-index: 1;
   position: relative;
-  background: url("./assets/mobile/image-footer.jpg") no-repeat top center;
-  background-size: cover;
+  background: url("./assets/mobile/image-footer.jpg") no-repeat top center / cover;
   padding-bottom: 4.5rem;
 }
 
@@ -337,7 +336,7 @@ footer button {
     display: grid;
     place-items: center;
     padding-bottom: 4.125rem;
-    background: url("./assets/tablet/image-footer.jpg") no-repeat top center;
+    background: url("./assets/tablet/image-footer.jpg") no-repeat top center / cover;
   }
 
   footer .container {
@@ -394,7 +393,7 @@ footer button {
   }  
 
   footer {
-    background: url("./assets/desktop/image-footer.jpg") no-repeat top center;
+    background: url("./assets/desktop/image-footer.jpg") no-repeat top center / cover;
     padding-bottom: 6.5rem;
   }
 
@@ -403,6 +402,7 @@ footer button {
     gap: 7.8125rem;
     max-width: 69.375rem;
     width: 100%;
+    justify-items: center;
   }
 
   footer .container h2 {
@@ -411,7 +411,13 @@ footer button {
   }
 
   footer .container p {
+    margin: 0;
     text-align: left;
     max-width: 21.875rem;
   }
+
+  footer button {
+    margin: 0;
+  }
+
 }
