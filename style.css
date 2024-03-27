@@ -285,6 +285,10 @@ footer button {
     --fs-xl: 3rem;
   }
 
+  body {
+    padding-top: 5rem;
+  }
+
   section,
   footer {
     padding: 0 2.5rem;
